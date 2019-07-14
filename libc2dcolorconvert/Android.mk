@@ -8,8 +8,10 @@ LOCAL_SRC_FILES := \
 LOCAL_C_INCLUDES := \
     $(TARGET_OUT_HEADERS)/adreno
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
+LOCAL_C_INCLUDES += hardware/qcom/display-caf/sdm845/libcopybit
 
 LOCAL_HEADER_LIBRARIES := \
+        copybit_headers \
         libutils_headers \
         libhardware_headers \
         display_headers
